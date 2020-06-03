@@ -1,38 +1,287 @@
-.App {
-  text-align: center;
+.firsthalf-bg{
+    background-color: #9ed0bb;
+    background-size: cover;
+    min-height: 830px;
+}
+.secondhalf-bg{
+    background-color: #65b0c1;
+    min-height: 830px;
+}
+.firsthalf-bg .text-box {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.secondhalf-bg .text-box {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+}
+.text-box .box-fig {
+    text-transform: uppercase;
+    padding: 20px;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+.text-box .box-fig:hover {
+    color: #494949 !important;
+    border-radius: 50px;
+    border-color: #494949 !important;
+    transition: all 0.3s ease 0s;
+}
+.text-box .box-fig-primary {
+    border: 4px solid #20bf6b !important;
+    color: #20bf6b !important;
+    background: #ffffff;
+}
+.text-box .box-fig-secondary {
+    border: 4px solid rgb(43, 135, 172) !important;
+    color: rgb(40, 78, 136) !important;
+    background: #ffffff;
+}
+.box-fig-primary .link-set {
+    text-decoration: none !important;
+    color: #20bf6b !important;
+}
+.box-fig-secondary .link-set {
+    text-decoration: none !important;
+    color: rgb(40, 78, 136) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text-white {
+    color: white !important;
+}
+.text-info {
+    color:rgb(33, 45, 155) !important;
+}
+.loginPage {
+    background: rgb(179,217,122);
+    background: linear-gradient(184deg, rgba(179,217,122,1) 27%, rgba(166,238,155,1) 56%, rgba(207,240,195,1) 98%);
+    min-height: 1000px;
+}
+.loginPage .login-box {
+    padding-top: 200px;
+}
+.login-form {
+    box-shadow: 2px 2px 5px 2px grey;
+    border-radius: 15px;
+}
+.btn-link {
+    text-decoration: none !important;
+}
+.home-page {
+    margin-top: 70px;
+}
+.myPage {
+    cursor: pointer;
+    color: darkcyan !important;
+}
+.service-section {
+    margin: 0 -15px !important;
+    margin-top: 80px !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.service-section h3{
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #222;
+    letter-spacing: 0.05em;
 }
 
-.App-link {
-  color: #61dafb;
+.service-section h3:after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    margin: 20px auto 0;
+    background:#F05F40;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.service-items .icon{
+    color: #F05F40;
+    font-size: 36px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 100%;
+    border: solid 2px #F05F40;
+    margin: 0 auto 30px;
+    line-height: 98px;
+}
+.service-items .icon:hover {
+    color: #65b0c1 !important;
+    font-size: 36px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 100%;
+    border: solid 2px green !important;
+    margin: 0 auto 30px;
+    line-height: 98px;
+}
+
+.service-items h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    color: #F05F40;
+    
+}
+
+.service-items h4 a{
+    color: #222;
+}
+
+.service-items h4 a:hover{
+    color: #F05F40;
+}
+
+.service-items p{
+    font-size: 16px;
+    line-height: 1.6;
+    color: #414141;
+    margin-bottom: 15px;
+}
+.contact{
+    background: #000101 !important;
+    padding: 80px 0;
+    position: relative;
+    text-align: center !important;
+}
+
+.contact h3{
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: 0.05em;
+}
+
+.contact h3:after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    margin: 20px auto 0;
+    background:#F05F40;
+}
+
+.contact p{
+    font-size: 18px;
+    line-height: 1.6;
+    color: #adadad;
+}
+
+.gap{
+    display: block;
+    margin-top: 50px;
+}
+
+.contact span.glyphicon{
+    color: #adadad;
+    font-size: 28px;
+    display: block;
+    margin: 0 auto 30px;
+}
+
+.contact a{
+    color: #adadad;
+    
+}
+
+.contact a:hover{
+    color: #F05F40;
+}
+.register-page {
+    margin-top: -50px;
+    min-height: 1000px;
+    background: rgb(122,217,212);
+    background: linear-gradient(184deg, rgba(122,217,212,1) 27%, rgba(155,238,221,1) 56%, rgba(188,227,218,1) 98%);;
+}
+.register-form {
+    padding-top: 150px !important;
+}
+.register-form .register-card {
+    border-radius: 20px;
+    border: 1px solid white !important;
+    box-shadow: 5px 5px 2px 2px white;
+}
+@media(min-width:768px)  AND (max-width:1020px){
+    .firsthalf-bg{
+        background-color: #9ed0bb;
+        background-size: cover;
+        min-height: 1000px;
+    }
+    .secondhalf-bg{
+        background-color: #65b0c1;
+        min-height: 1000px;
+    }
+}
+@media(min-width:1024px) AND (max-width: 1300px) {
+    .firsthalf-bg{
+        background-color: #9ed0bb;
+        background-size: cover;
+        min-height: 1380px;
+    }
+    .secondhalf-bg{
+        background-color: #65b0c1;
+        min-height: 1380px;
+    }
+}
+@media(min-width:400px)  AND (max-width:720px){
+    .firsthalf-bg{
+        background-color: #9ed0bb;
+        background-size: cover;
+        min-height: 370px;
+    }
+    .secondhalf-bg{
+        background-color: #65b0c1;
+        min-height: 370px;
+    }
+}
+@media(min-width:374px)  AND (max-width:400px){
+    .firsthalf-bg{
+        background-color: #9ed0bb;
+        background-size: cover;
+        min-height: 350px;
+    }
+    .secondhalf-bg{
+        background-color: #65b0c1;
+        min-height: 350px;
+    }
+}
+@media(min-width:350px)  AND (max-width:374px){
+    .firsthalf-bg{
+        background-color: #9ed0bb;
+        background-size: cover;
+        min-height: 315px;
+    }
+    .secondhalf-bg{
+        background-color: #65b0c1;
+        min-height: 315px;
+    }
+}
+@media(min-width:300px)  AND (max-width:350px){
+    .firsthalf-bg{
+        background-color: #9ed0bb;
+        background-size: cover;
+        min-height: 284px;
+    }
+    .secondhalf-bg{
+        background-color: #65b0c1;
+        min-height: 284px;
+    }
 }
